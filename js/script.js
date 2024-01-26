@@ -74,5 +74,8 @@ createApp({
       }
       this.currentImg--;
     },
+    getImg: function (index) {
+      this.currentImg = index;
+    },
   },
 }).mount("#app");
