@@ -12,7 +12,11 @@
     <div id="app">
       <div class="container">
         <div class="slider-wrapper" tabindex="0">
-          <div class="item">
+          <div
+            @mouseover="stopSlideShow"
+            @mouseleave="startSlideShow"
+            class="item"
+          >
             <img
               :src="slides[currentImg].image"
               alt="slides[currentImg].title"
